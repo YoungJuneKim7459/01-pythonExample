@@ -1,0 +1,36 @@
+# ex209.py
+# 반복문 : 반복적으로 코드를 수행하는 문장
+# for문 while문
+
+# for 변수 in 시퀀스(range, list, tuple, string):
+#     반복적으로 수행되는 코드(들여쓰기 필수)
+
+# 반복변수(0부터 4까지) 5번 반복
+# for i in range(5):
+#    print(f'반복 변수(인덱스): {i}')
+
+# 1부터 20까지 
+for i in range(1, 21):
+    print(f'반복 변수(인덱스): {i}')
+
+# 1부터 100까지 2씩 증가하며(1,3,5,7,....)
+for i in range(1, 101, 2):
+    print(f'반복 변수(인덱스): {i}')
+
+# 연습문제 1부터 100사이의 2의 배수 출력
+for i in range(1, 101):
+    if i%2 == 0:
+        print(i)
+# 연습 2 1부터 100까지의 합
+sum = 0
+for i in range(1, 101):
+    sum = sum + i
+print(sum)
+# 연습 3 1부터 100사이의 2의 배수이면서, 3의 배수인 수를 모두 출력
+for i in range(1, 101):
+    if i%2 == 0 and i%3 ==0:
+        print(i)
+# 연습 4 1부터 100사이의 수 중 숫자안에 3이 들어간 수 모두 출력 (3, 13, 23, ...)
+for i in range(1, 101):
+    if i%10 == 3 or i//10 == 3:
+        print(i)
